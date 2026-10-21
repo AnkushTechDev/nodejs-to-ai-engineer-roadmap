@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-to-ai-engineer-roadmap",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A practical, plain-language AI engineering roadmap for Node.js developers.",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "scripts": {
+    "learn": "node --env-file-if-exists=.env scripts/learn.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test",
+    "demo": "node --env-file-if-exists=.env projects/docs-assistant/index.mjs",
+    "workflow": "node projects/support-workflow/index.mjs",
+    "serve": "node --env-file-if-exists=.env projects/rag-api/server.mjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@langchain/core": "^1.2.20",
+    "@langchain/langgraph": "^1.5.1",
+    "@langchain/openai": "^1.6.3",
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "langchain": "^1.5.18",
+    "openai": "^7.39.0",
+    "zod": "^4.6.7"
+  }
+}

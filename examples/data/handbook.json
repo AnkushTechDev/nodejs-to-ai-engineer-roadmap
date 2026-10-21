@@ -1,0 +1,6 @@
+[
+  { "id": "leave-policy-v1", "tenantId": "demo", "text": "Employees receive 20 days of annual leave. Leave requests require manager approval. Public holidays are separate from annual leave." },
+  { "id": "remote-policy-v1", "tenantId": "demo", "text": "Employees may work remotely three days per week. Remote work on other days requires manager approval." },
+  { "id": "expenses-policy-v1", "tenantId": "demo", "text": "Expense claims must include receipts. Submit expense claims within 30 days of purchase. The finance team reviews claims." },
+  { "id": "private-policy-v1", "tenantId": "other-company", "text": "Confidential: this tenant receives 99 days of annual leave. This document must never appear in demo tenant results." }
+]

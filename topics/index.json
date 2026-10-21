@@ -1,0 +1,491 @@
+[
+  {
+    "slug": "01-ai-engineering",
+    "title": "What an AI engineer actually builds",
+    "phase": "Foundations",
+    "mode": "offline",
+    "prereqs": []
+  },
+  {
+    "slug": "02-math-for-ai",
+    "title": "The useful math: vectors, probability, and gradients",
+    "phase": "Foundations",
+    "mode": "offline",
+    "prereqs": [
+      1
+    ]
+  },
+  {
+    "slug": "03-machine-learning",
+    "title": "Machine learning fundamentals",
+    "phase": "Foundations",
+    "mode": "offline",
+    "prereqs": [
+      2
+    ]
+  },
+  {
+    "slug": "04-neural-networks-transformers",
+    "title": "Neural networks and transformers",
+    "phase": "Foundations",
+    "mode": "offline",
+    "prereqs": [
+      2,
+      3
+    ]
+  },
+  {
+    "slug": "05-tokens-and-context",
+    "title": "Tokens, context windows, and model settings",
+    "phase": "LLM applications",
+    "mode": "offline",
+    "prereqs": [
+      4
+    ]
+  },
+  {
+    "slug": "06-model-apis",
+    "title": "Your first real model API call",
+    "phase": "LLM applications",
+    "mode": "api",
+    "prereqs": [
+      5
+    ]
+  },
+  {
+    "slug": "07-prompt-engineering",
+    "title": "Prompt engineering without magic",
+    "phase": "LLM applications",
+    "mode": "offline",
+    "prereqs": [
+      5,
+      6
+    ]
+  },
+  {
+    "slug": "08-structured-outputs",
+    "title": "Structured outputs and schema validation",
+    "phase": "LLM applications",
+    "mode": "api",
+    "prereqs": [
+      6,
+      7
+    ]
+  },
+  {
+    "slug": "09-streaming",
+    "title": "Streaming and a responsive user experience",
+    "phase": "LLM applications",
+    "mode": "api",
+    "prereqs": [
+      6
+    ]
+  },
+  {
+    "slug": "10-embeddings",
+    "title": "Embeddings and semantic similarity",
+    "phase": "Retrieval and RAG",
+    "mode": "offline",
+    "prereqs": [
+      2,
+      5
+    ]
+  },
+  {
+    "slug": "11-vector-databases",
+    "title": "Vector databases, pgvector, and indexes",
+    "phase": "Retrieval and RAG",
+    "mode": "offline",
+    "prereqs": [
+      10
+    ]
+  },
+  {
+    "slug": "12-document-ingestion",
+    "title": "Document loading, parsing, and cleaning",
+    "phase": "Retrieval and RAG",
+    "mode": "offline",
+    "prereqs": [
+      11
+    ]
+  },
+  {
+    "slug": "13-chunking",
+    "title": "Chunking: splitting text without losing meaning",
+    "phase": "Retrieval and RAG",
+    "mode": "offline",
+    "prereqs": [
+      12
+    ]
+  },
+  {
+    "slug": "14-rag",
+    "title": "RAG from first principles",
+    "phase": "Retrieval and RAG",
+    "mode": "offline",
+    "prereqs": [
+      6,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "slug": "15-hybrid-search-reranking",
+    "title": "BM25, hybrid search, and reranking",
+    "phase": "Retrieval and RAG",
+    "mode": "offline",
+    "prereqs": [
+      14
+    ]
+  },
+  {
+    "slug": "16-advanced-rag",
+    "title": "Advanced RAG patterns and when to use them",
+    "phase": "Retrieval and RAG",
+    "mode": "offline",
+    "prereqs": [
+      14,
+      15
+    ]
+  },
+  {
+    "slug": "17-langchain",
+    "title": "LangChain for JavaScript developers",
+    "phase": "Agents and workflows",
+    "mode": "api",
+    "prereqs": [
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "slug": "18-tool-calling",
+    "title": "Tool calling: let models request code safely",
+    "phase": "Agents and workflows",
+    "mode": "api",
+    "prereqs": [
+      8,
+      6
+    ]
+  },
+  {
+    "slug": "19-agents",
+    "title": "Agents and the bounded tool loop",
+    "phase": "Agents and workflows",
+    "mode": "api",
+    "prereqs": [
+      17,
+      18
+    ]
+  },
+  {
+    "slug": "20-langgraph",
+    "title": "LangGraph: state, nodes, edges, and routing",
+    "phase": "Agents and workflows",
+    "mode": "offline",
+    "prereqs": [
+      19
+    ]
+  },
+  {
+    "slug": "21-memory",
+    "title": "Conversation memory and long-term knowledge",
+    "phase": "Agents and workflows",
+    "mode": "offline",
+    "prereqs": [
+      20
+    ]
+  },
+  {
+    "slug": "22-human-in-the-loop",
+    "title": "Human approval, interruption, and safe resumption",
+    "phase": "Agents and workflows",
+    "mode": "offline",
+    "prereqs": [
+      20,
+      21
+    ]
+  },
+  {
+    "slug": "23-model-context-protocol",
+    "title": "MCP: a common interface for tools and resources",
+    "phase": "Agents and workflows",
+    "mode": "service",
+    "prereqs": [
+      18,
+      20
+    ]
+  },
+  {
+    "slug": "24-multi-agent-systems",
+    "title": "Multi-agent systems and orchestration tradeoffs",
+    "phase": "Agents and workflows",
+    "mode": "offline",
+    "prereqs": [
+      19,
+      20
+    ]
+  },
+  {
+    "slug": "25-reasoning-context-engineering",
+    "title": "Reasoning models and context engineering",
+    "phase": "Agents and workflows",
+    "mode": "offline",
+    "prereqs": [
+      5,
+      14,
+      21
+    ]
+  },
+  {
+    "slug": "26-evaluation",
+    "title": "Evaluating retrieval, answers, and agents",
+    "phase": "Production engineering",
+    "mode": "offline",
+    "prereqs": [
+      14,
+      19
+    ]
+  },
+  {
+    "slug": "27-observability",
+    "title": "Tracing, metrics, and debugging AI requests",
+    "phase": "Production engineering",
+    "mode": "offline",
+    "prereqs": [
+      26
+    ]
+  },
+  {
+    "slug": "28-security",
+    "title": "Prompt injection, permissions, and secure tool execution",
+    "phase": "Production engineering",
+    "mode": "offline",
+    "prereqs": [
+      18,
+      14
+    ]
+  },
+  {
+    "slug": "29-cost-latency-caching",
+    "title": "Cost, latency, caching, and reliability budgets",
+    "phase": "Production engineering",
+    "mode": "offline",
+    "prereqs": [
+      5,
+      26,
+      28
+    ]
+  },
+  {
+    "slug": "30-nodejs-backends",
+    "title": "Building AI HTTP APIs in Node.js",
+    "phase": "Production engineering",
+    "mode": "offline",
+    "prereqs": [
+      6,
+      9,
+      28
+    ]
+  },
+  {
+    "slug": "31-deployment-llmops",
+    "title": "Deployment, versioning, and LLMOps",
+    "phase": "Production engineering",
+    "mode": "offline",
+    "prereqs": [
+      26,
+      27,
+      29,
+      30
+    ]
+  },
+  {
+    "slug": "32-multimodal-ai",
+    "title": "Images, OCR, document understanding, and multimodal models",
+    "phase": "Advanced and specialization",
+    "mode": "api",
+    "prereqs": [
+      6,
+      12,
+      28
+    ]
+  },
+  {
+    "slug": "33-voice-and-realtime",
+    "title": "Speech, audio, and realtime assistants",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      9,
+      20,
+      30
+    ]
+  },
+  {
+    "slug": "34-local-open-models",
+    "title": "Local models and open-weight deployment",
+    "phase": "Advanced and specialization",
+    "mode": "local",
+    "prereqs": [
+      6,
+      28
+    ]
+  },
+  {
+    "slug": "35-fine-tuning",
+    "title": "Fine-tuning, LoRA, and preference optimization",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      3,
+      26
+    ]
+  },
+  {
+    "slug": "36-data-pipelines",
+    "title": "Queues, incremental indexing, and data lifecycle",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      12,
+      13,
+      31
+    ]
+  },
+  {
+    "slug": "37-search-recommendations",
+    "title": "Semantic search, clustering, and recommendations",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      3,
+      10,
+      26
+    ]
+  },
+  {
+    "slug": "38-testing-ai-systems",
+    "title": "Testing deterministic code and probabilistic behavior",
+    "phase": "Production engineering",
+    "mode": "offline",
+    "prereqs": [
+      26,
+      28,
+      30
+    ]
+  },
+  {
+    "slug": "39-responsible-ai",
+    "title": "Responsible AI, privacy, and accessible products",
+    "phase": "Production engineering",
+    "mode": "offline",
+    "prereqs": [
+      26,
+      28
+    ]
+  },
+  {
+    "slug": "40-experimentation",
+    "title": "A/B tests, feedback, and continuous improvement",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      26,
+      29,
+      31
+    ]
+  },
+  {
+    "slug": "41-graph-rag-and-text-to-sql",
+    "title": "GraphRAG, knowledge graphs, and text-to-SQL",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      14,
+      18,
+      28
+    ]
+  },
+  {
+    "slug": "42-model-optimization",
+    "title": "Quantization, distillation, batching, and serving",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      4,
+      34,
+      35
+    ]
+  },
+  {
+    "slug": "43-system-design-portfolio",
+    "title": "AI system design, capstones, and interview preparation",
+    "phase": "Career and deeper study",
+    "mode": "offline",
+    "prereqs": [
+      14,
+      19,
+      26,
+      28,
+      31
+    ]
+  },
+  {
+    "slug": "44-python-and-research",
+    "title": "The Python bridge and reading AI research",
+    "phase": "Career and deeper study",
+    "mode": "offline",
+    "prereqs": [
+      3,
+      4,
+      35
+    ]
+  },
+  {
+    "slug": "45-nlp-fundamentals",
+    "title": "NLP: text processing before and beyond LLMs",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      3,
+      10
+    ]
+  },
+  {
+    "slug": "46-image-generation-diffusion",
+    "title": "Image generation and diffusion fundamentals",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      4,
+      32
+    ]
+  },
+  {
+    "slug": "47-typescript-and-js-ecosystem",
+    "title": "TypeScript contracts and the JavaScript AI ecosystem",
+    "phase": "Career and deeper study",
+    "mode": "offline",
+    "prereqs": [
+      8,
+      17,
+      30
+    ]
+  },
+  {
+    "slug": "48-datasets-and-labeling",
+    "title": "Datasets, labeling, and reproducible experiments",
+    "phase": "Advanced and specialization",
+    "mode": "offline",
+    "prereqs": [
+      3,
+      26,
+      35,
+      39
+    ]
+  }
+]
